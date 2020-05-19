@@ -47,7 +47,7 @@ impl Matplotlib {
 
 impl Backend for Matplotlib {
   fn figure(&mut self) -> io::Result<&mut Self> {
-    self.exec("plt.figure()")
+    self.exec("plt.figure(dpi=72)")
   }
 
   fn subplot(&mut self, rows: u32, cols: u32, n: u32) -> io::Result<&mut Self> {
