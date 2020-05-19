@@ -10,7 +10,7 @@ pub struct Matplotlib {
 impl Matplotlib {
   /// create an instance of Matplotlib backend.
   pub fn new() -> io::Result<Matplotlib> {
-    let child = Command::new("python").arg("-")
+    let child = Command::new("python3").arg("-")
       .stdin(Stdio::piped())
       .stdout(Stdio::inherit())
       .stderr(Stdio::inherit())
