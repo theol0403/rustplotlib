@@ -5,7 +5,7 @@ use cpython::{GILGuard, Python, PyModule, PyDict, NoArgs};
 
 pub struct MatplotlibNative {
   gil: GILGuard,
-  plt: PyModule,
+  pub plt: PyModule,
 }
 
 impl MatplotlibNative {
